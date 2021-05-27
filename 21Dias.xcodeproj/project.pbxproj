@@ -26,7 +26,6 @@
 		0BCCBC9B265C1B2800A53E4C /* owl.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BCCBC83265C1B2700A53E4C /* owl.png */; };
 		0BCCBC9C265C1B2800A53E4C /* musica.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BCCBC84265C1B2700A53E4C /* musica.png */; };
 		0BCCBC9D265C1B2800A53E4C /* logo21.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BCCBC85265C1B2700A53E4C /* logo21.png */; };
-		0BCCBC9E265C1B2800A53E4C /* gifrain.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0BCCBC86265C1B2700A53E4C /* gifrain.gif */; };
 		0BCCBC9F265C1B2800A53E4C /* calendario.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BCCBC87265C1B2800A53E4C /* calendario.png */; };
 		0BCCBCA0265C1B2800A53E4C /* enfadado.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BCCBC88265C1B2800A53E4C /* enfadado.png */; };
 		0BCCBCA1265C1B2800A53E4C /* fondoagua.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BCCBC89265C1B2800A53E4C /* fondoagua.png */; };
@@ -60,7 +59,6 @@
 		0BCCBC83265C1B2700A53E4C /* owl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owl.png; sourceTree = "<group>"; };
 		0BCCBC84265C1B2700A53E4C /* musica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musica.png; sourceTree = "<group>"; };
 		0BCCBC85265C1B2700A53E4C /* logo21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo21.png; sourceTree = "<group>"; };
-		0BCCBC86265C1B2700A53E4C /* gifrain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = gifrain.gif; path = ../../../../Downloads/gifrain.gif; sourceTree = "<group>"; };
 		0BCCBC87265C1B2800A53E4C /* calendario.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendario.png; sourceTree = "<group>"; };
 		0BCCBC88265C1B2800A53E4C /* enfadado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enfadado.png; sourceTree = "<group>"; };
 		0BCCBC89265C1B2800A53E4C /* fondoagua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondoagua.png; sourceTree = "<group>"; };
@@ -103,7 +101,6 @@
 				0BCCBC73265C1B2600A53E4C /* fondodurmiendo.png */,
 				0BCCBC77265C1B2600A53E4C /* fondofuego.png */,
 				0BCCBC7B265C1B2600A53E4C /* fuego.gif */,
-				0BCCBC86265C1B2700A53E4C /* gifrain.gif */,
 				0BCCBC7E265C1B2700A53E4C /* inspirado.png */,
 				0BCCBC78265C1B2600A53E4C /* libro.png */,
 				0BCCBC82265C1B2700A53E4C /* lluviafondo.png */,
@@ -236,7 +233,6 @@
 				0BCCBC98265C1B2800A53E4C /* wave.png in Resources */,
 				0BCCBC9F265C1B2800A53E4C /* calendario.png in Resources */,
 				0BCCBC8E265C1B2800A53E4C /* fire.png in Resources */,
-				0BCCBC9E265C1B2800A53E4C /* gifrain.gif in Resources */,
 				0BCCBC8D265C1B2800A53E4C /* durmiendo.gif in Resources */,
 				0BCCBC96265C1B2800A53E4C /* inspirado.png in Resources */,
 				0BCCBC99265C1B2800A53E4C /* alegre.png in Resources */,
