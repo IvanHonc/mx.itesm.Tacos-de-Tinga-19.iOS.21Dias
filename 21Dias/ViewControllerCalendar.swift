@@ -9,6 +9,7 @@ import UIKit
 
 class ViewControllerCalendar: UIViewController {
 
+    @IBOutlet weak var Calendar: CalendarView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

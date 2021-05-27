@@ -1,0 +1,6 @@
+framework module Pods_21Dias {
+  umbrella header "Pods-21Dias-umbrella.h"
+
+  export *
+  module * { export * }
+}
