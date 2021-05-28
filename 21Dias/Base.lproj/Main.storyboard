@@ -457,7 +457,7 @@
         <!--Reproductor-->
         <scene sceneID="pn8-10-XwI">
             <objects>
-                <viewController id="7PS-is-owi" sceneMemberID="viewController">
+                <viewController id="7PS-is-owi" customClass="ViewControllerGif" customModule="_1Dias" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gi7-Ar-Hkk">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -482,32 +482,56 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Reiniciar"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fu4-le-UMW">
-                                <rect key="frame" x="13" y="702" width="75" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="fire.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-Y6-5tf">
-                                <rect key="frame" x="204" y="702" width="75" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="wave.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lox-4p-Ew6">
-                                <rect key="frame" x="96" y="708" width="74" height="70"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="rain.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYt-4q-tVd">
-                                <rect key="frame" x="309" y="702" width="75" height="82"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="owl.png"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeN-zn-bA3">
                                 <rect key="frame" x="151.66666666666666" y="76" width="90" height="40"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fu4-le-UMW">
+                                <rect key="frame" x="27" y="550" width="60" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Gad-DH-tz9"/>
+                                    <constraint firstAttribute="height" constant="62" id="d4s-qb-IaK"/>
+                                </constraints>
+                                <state key="normal" image="fire.png"/>
+                                <connections>
+                                    <action selector="btnFire:" destination="7PS-is-owi" eventType="touchUpInside" id="37W-Bu-RXd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lox-4p-Ew6">
+                                <rect key="frame" x="211" y="550" width="60" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="PPN-YB-dOE"/>
+                                    <constraint firstAttribute="height" constant="62" id="bwD-8q-2ze"/>
+                                </constraints>
+                                <state key="normal" image="rain.png"/>
+                                <connections>
+                                    <action selector="btnRain:" destination="7PS-is-owi" eventType="touchUpInside" id="sK1-L9-gUx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lYt-4q-tVd">
+                                <rect key="frame" x="290" y="550" width="60" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="Kze-NB-aGR"/>
+                                    <constraint firstAttribute="width" constant="60" id="jKX-tV-Kxd"/>
+                                </constraints>
+                                <state key="normal" image="owl.png"/>
+                                <connections>
+                                    <action selector="btnOwl:" destination="7PS-is-owi" eventType="touchUpInside" id="pxG-rP-K43"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfd-Y6-5tf">
+                                <rect key="frame" x="123" y="550" width="60" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="EC9-h9-sr1"/>
+                                    <constraint firstAttribute="width" constant="60" id="ZDy-zV-Mf5"/>
+                                </constraints>
+                                <state key="normal" image="wave.png"/>
+                                <connections>
+                                    <action selector="btnSea:" destination="7PS-is-owi" eventType="touchUpInside" id="deR-EC-mYL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SVP-ja-12q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -516,18 +540,30 @@
                             <constraint firstItem="bvs-8L-BkH" firstAttribute="centerX" secondItem="gi7-Ar-Hkk" secondAttribute="centerX" id="DcO-QB-fDg"/>
                             <constraint firstItem="SVP-ja-12q" firstAttribute="trailing" secondItem="xcL-0G-mlp" secondAttribute="trailing" constant="56" id="Hmt-Ok-hQ7"/>
                             <constraint firstItem="xcL-0G-mlp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7b4-hJ-rn5" secondAttribute="trailing" constant="8" symbolic="YES" id="JAD-fR-K1V"/>
+                            <constraint firstItem="SVP-ja-12q" firstAttribute="trailing" secondItem="lYt-4q-tVd" secondAttribute="trailing" constant="40" id="JLi-bh-Qmh"/>
                             <constraint firstItem="pRC-9b-6cZ" firstAttribute="bottom" secondItem="SVP-ja-12q" secondAttribute="bottom" id="Lm8-54-y1t"/>
+                            <constraint firstItem="lYt-4q-tVd" firstAttribute="centerY" secondItem="Lox-4p-Ew6" secondAttribute="centerY" id="LqC-Hh-Ewi"/>
                             <constraint firstItem="7b4-hJ-rn5" firstAttribute="centerY" secondItem="xcL-0G-mlp" secondAttribute="centerY" id="MbL-Kf-23Q"/>
-                            <constraint firstItem="WeN-zn-bA3" firstAttribute="leading" secondItem="7b4-hJ-rn5" secondAttribute="leading" id="ROw-Ea-Wil"/>
+                            <constraint firstItem="SVP-ja-12q" firstAttribute="bottom" secondItem="lYt-4q-tVd" secondAttribute="bottom" constant="95" id="QHA-1d-ruC"/>
+                            <constraint firstItem="WeN-zn-bA3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7b4-hJ-rn5" secondAttribute="leading" id="ROw-Ea-Wil"/>
                             <constraint firstItem="pRC-9b-6cZ" firstAttribute="leading" secondItem="gi7-Ar-Hkk" secondAttribute="leading" id="WFe-en-CaC"/>
                             <constraint firstItem="7b4-hJ-rn5" firstAttribute="top" secondItem="bvs-8L-BkH" secondAttribute="bottom" constant="39" id="c87-US-zFc"/>
                             <constraint firstItem="7b4-hJ-rn5" firstAttribute="centerX" secondItem="bvs-8L-BkH" secondAttribute="centerX" id="eKt-Qc-ZKC"/>
+                            <constraint firstItem="lYt-4q-tVd" firstAttribute="centerY" secondItem="fu4-le-UMW" secondAttribute="centerY" id="g4q-eV-LBO"/>
                             <constraint firstItem="pRC-9b-6cZ" firstAttribute="top" secondItem="gi7-Ar-Hkk" secondAttribute="top" id="gl3-F4-rVD"/>
                             <constraint firstItem="WeN-zn-bA3" firstAttribute="top" secondItem="SVP-ja-12q" secondAttribute="top" constant="76" id="lGf-su-egD"/>
+                            <constraint firstItem="lYt-4q-tVd" firstAttribute="top" secondItem="Gfd-Y6-5tf" secondAttribute="top" id="lZk-rs-mKV"/>
+                            <constraint firstItem="SVP-ja-12q" firstAttribute="trailing" secondItem="WeN-zn-bA3" secondAttribute="trailing" constant="148.33333333333334" id="oCE-u7-G2L"/>
+                            <constraint firstItem="Gfd-Y6-5tf" firstAttribute="leading" secondItem="fu4-le-UMW" secondAttribute="trailing" constant="36" id="r8v-OK-2cq"/>
+                            <constraint firstItem="fu4-le-UMW" firstAttribute="leading" secondItem="gi7-Ar-Hkk" secondAttribute="leadingMargin" constant="11" id="tHN-HP-jCv"/>
                             <constraint firstItem="bvs-8L-BkH" firstAttribute="top" secondItem="SVP-ja-12q" secondAttribute="top" constant="58" id="tc2-42-sAL"/>
+                            <constraint firstItem="lYt-4q-tVd" firstAttribute="leading" secondItem="Lox-4p-Ew6" secondAttribute="trailing" constant="19" id="yXK-fY-3uW"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Reproductor" image="music.note" catalog="system" id="Err-Oi-Jdc"/>
+                    <connections>
+                        <outlet property="ImgGif" destination="pRC-9b-6cZ" id="B7f-Sc-JvA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="49f-qP-yKt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
