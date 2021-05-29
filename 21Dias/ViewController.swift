@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         if self.barChart != nil {
             self.barChart.setDataEntries(values: self.arrDatos)
             self.barChart.start()
+
         }
     }
 
