@@ -26,7 +26,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perfil" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JeI-x8-jk1">
                                 <rect key="frame" x="160" y="34" width="70" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxw-29-T6x">
@@ -40,8 +40,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Juan Escutia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18j-5U-uCA">
                                 <rect key="frame" x="129" y="336" width="132" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a25-Ot-nKV">
                                 <rect key="frame" x="112" y="444" width="166" height="51"/>
@@ -53,7 +53,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.094117647060000004" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="18j-5U-uCA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3wL-tt-eYQ"/>
                             <constraint firstItem="18j-5U-uCA" firstAttribute="top" secondItem="nDK-k3-NSc" secondAttribute="bottom" constant="59" id="7OY-KO-5bw"/>
@@ -89,30 +89,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="right" semanticContentAttribute="forceRightToLeft" translatesAutoresizingMaskIntoConstraints="NO" id="f3p-Lo-4fp" customClass="MSBBarChartView" customModule="MSBBarChart">
-                                <rect key="frame" x="117" y="100" width="225" height="510"/>
+                                <rect key="frame" x="124" y="100" width="218" height="510"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Rv2-JB-pG1">
-                                <rect key="frame" x="75" y="628" width="240" height="128"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">1. Tristeza2. Cansancio2. Alegría4. Inspiración5. Enfado</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="DP4-Fd-Nt1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kO7-x7-pAo" firstAttribute="centerX" secondItem="0Ks-Gc-vwt" secondAttribute="centerX" id="8j4-9T-kI7"/>
-                            <constraint firstItem="Rv2-JB-pG1" firstAttribute="bottom" secondItem="DP4-Fd-Nt1" secondAttribute="bottom" id="HBa-wE-Mxq"/>
                             <constraint firstItem="DP4-Fd-Nt1" firstAttribute="trailing" secondItem="f3p-Lo-4fp" secondAttribute="trailing" constant="48" id="IlT-b3-Vae"/>
-                            <constraint firstItem="f3p-Lo-4fp" firstAttribute="leading" secondItem="DP4-Fd-Nt1" secondAttribute="leading" constant="117" id="YUO-p3-j3a"/>
+                            <constraint firstItem="f3p-Lo-4fp" firstAttribute="leading" secondItem="DP4-Fd-Nt1" secondAttribute="leading" constant="124" id="Z0A-fm-he3"/>
                             <constraint firstItem="f3p-Lo-4fp" firstAttribute="top" secondItem="kO7-x7-pAo" secondAttribute="bottom" constant="38" id="dp2-31-ubS"/>
                             <constraint firstItem="kO7-x7-pAo" firstAttribute="top" secondItem="DP4-Fd-Nt1" secondAttribute="top" constant="20" id="ezL-O9-e69"/>
-                            <constraint firstItem="Rv2-JB-pG1" firstAttribute="top" secondItem="f3p-Lo-4fp" secondAttribute="bottom" constant="18" id="hUu-yi-ePG"/>
-                            <constraint firstItem="DP4-Fd-Nt1" firstAttribute="trailing" secondItem="Rv2-JB-pG1" secondAttribute="trailing" constant="75" id="hpE-ER-vEO"/>
-                            <constraint firstItem="Rv2-JB-pG1" firstAttribute="leading" secondItem="DP4-Fd-Nt1" secondAttribute="leading" constant="75" id="sVw-Mb-24Y"/>
                             <constraint firstItem="DP4-Fd-Nt1" firstAttribute="bottom" secondItem="f3p-Lo-4fp" secondAttribute="bottom" constant="146" id="yxv-ev-Tgm"/>
                         </constraints>
                     </view>
@@ -605,19 +593,19 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Oj4-ow-axp">
                                 <rect key="frame" x="16" y="104" width="358" height="621"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">¿Qué es nuestra aplicación?
+                                <mutableString key="text">¿Qué es nuestra aplicación?
 Nuestra aplicación es una ayuda para que se creen buenos habitos, estudios dicen que se requieren 21 días para poder acostumbrarnos y crear un nuevo habito y consideramos que con nuestra aplicación esta tarea puede facilitarse.
 
 ¿Por qué el mapache?
 El mapache es un animal que relaja y nos gusto mucho la idea de usarlo como un elemento más de la aplicación.
 
-Diseño:
-https://instagram.com/chofsart?igshid=sf45m5r9fpgy (\"https://instagram.com/chofsart?igshid=sf45m5r9fpgy\")
+Arte:
+https://instagram.com/chofsart?igshid=sf45m5r9fpgy 
 
 Licencia de las gráficas:
 Copyright [2020] [Philip Jahoda]
 Retrieved from:
-https://github.com/PhilJay/MPAndroidChart (\"https://github.com/PhilJay/MPAndroidChart\")
+https://github.com/PhilJay/MPAndroidChart
 Applied in:
 PerfilFrag´s charts
 
@@ -625,7 +613,7 @@ Licensed under the Apache License, Version 2.0 (the \"License\");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-http://www.apache.org/licenses/LICENSE-2.0 (\"http://www.apache.org/licenses/LICENSE-2.0\")
+http://www.apache.org/licenses/LICENSE-2.0 
 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
@@ -634,7 +622,7 @@ The MIT License (MIT)
 Copyright (c) [2018] [Sundeepk]
 Permission is hereby granted, free of charge, to any person obtaining a copy " + "of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
